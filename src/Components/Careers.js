@@ -34,8 +34,8 @@ const Careers = () => {
       url: 'https://jsearch.p.rapidapi.com/search',
       params: { query: 'Software', page: '1', num_pages: '10' },
       headers: {
-        'X-RapidAPI-Key': 'b17f17c9bfmshc40d3eba5011ac5p117a54jsn92999ecc513f',
-        'X-RapidAPI-Host': 'jsearch.p.rapidapi.com',
+        'X-RapidAPI-Key': '8d059bf8d8mshd4b328215e21687p1b283ajsn41e8da8a6e21',
+        'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
       },
     };
 
@@ -50,12 +50,14 @@ const Careers = () => {
   }, []);
 
   return (
-    <div id="jobs" className="careers">
-      <h1 className="jobsSectionTitle">Job Listings</h1>
-      <div className="job-listings">
-        {jobData.map((job) => (
-          <JobCard key={job.job_id} job={job} />
-        ))}
+    <div id="jobs">
+      <div className="careers">
+        <h1 className="jobsSectionTitle">Job Listings</h1>
+        <div className="job-listings">
+          {jobData.map((job) => (
+            <JobCard key={job.job_id} job={job} />
+          ))}
+        </div>
       </div>
     </div>
   );

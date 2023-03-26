@@ -36,7 +36,7 @@ const resources = [
 
 const Skills = () => {
   return (
-    <div className="Skills">
+    <div id="skills" className="Skills">
       <h1 className="skills-title">Empowering Women in STEM</h1>
       <p className="skills-description">
         At EmpowHER, our mission is to support women in Science, Technology, Engineering, and Mathematics (STEM) fields by providing valuable resources and opportunities. We believe that empowering women in STEM is essential for fostering innovation, driving economic growth, and achieving gender equality in the workforce.

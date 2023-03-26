@@ -21,30 +21,11 @@ class App extends Component {
     ReactGA.pageview(window.location.pathname);
   }
 
-  getResumeData() {
-    $.ajax({
-      url: "./resumeData.json",
-      dataType: "json",
-      cache: false,
-      success: function(data) {
-        this.setState({ resumeData: data });
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.log(err);
-        alert(err);
-      }
-    });
-  }
-
-  componentDidMount() {
-    this.getResumeData();
-  }
-
   render() {
     return (
       <div className="App">
         <Header />
-        <Testimonials data={this.state.stemQuotes}/>
+        <Testimonials />
         <Skills />
         <Careers />
         <Contact />

@@ -55,7 +55,7 @@ class Header extends Component {
               <h1 className="responsive-headline">EmpowHer</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>Women in Stem Description</h3>
+              <h3>Breaking Barriers, Empowering Women in STEM: Join us in creating a more inclusive and diverse future for tech innovation!</h3>
             </Fade>
             <hr />
             <Fade bottom duration={2000}>
