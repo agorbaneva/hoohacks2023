@@ -70,7 +70,10 @@
   }
 
   .jobsSectionTitle {
-    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color:white;
   }
   
   .App {

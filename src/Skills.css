@@ -1,53 +1,61 @@
 .Skills {
     font-family: 'Arial', sans-serif;
     padding: 2rem;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: black;
+    color: white;
     line-height: 1.6;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .skills-title {
-    font-size: 2rem;
+    max-width: 100%;
+    margin: 0;
+}
+
+.skills-title {
     font-weight: bold;
     text-align: center;
     margin-bottom: 1.5rem;
-  }
-  
-  .skills-description {
+    color:white;
+}
+
+.skills-description {
     margin-bottom: 1rem;
     text-align: justify;
-  }
-  
-  .resource-list {
+}
+
+.resource-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .resource-item {
-    background-color: white;
+}
+
+.resource-item {
+    background-color: #f8f9fa;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     margin-bottom: 2rem;
-    flex: 1;
-    min-width: 280px;
-  }
-  
-  .resource-title {
+    width: calc(33.33% - 1rem); /* This will ensure exactly 3 companies per row with a 1rem margin between each card */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.resource-item:hover {
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.resource-title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-  }
-  
-  .resource-description {
+}
+
+.resource-description {
     margin-bottom: 1rem;
     text-align: justify;
-  }
-  
-  .resource-link {
+    color: black;
+}
+
+.resource-link {
     display: inline-block;
     background-color: #4caf50;
     color: white;
@@ -56,9 +64,8 @@
     border-radius: 3px;
     font-size: 1rem;
     font-weight: bold;
-  }
-  
-  .resource-link:hover {
+}
+
+.resource-link:hover {
     background-color: #45a049;
-  }
-  
+}

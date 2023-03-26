@@ -24,12 +24,12 @@ const resources = [
   },
   {
     title: 'Black Girls Code',
-    url: 'https://www.blackgirlscode.com/',
+    url: 'https://www.wearebgc.org/',
     description: 'Black Girls Code is a nonprofit organization that aims to increase the number of women of color in the digital space by empowering girls of color ages 7 to 17 to become innovators in STEM fields.',
   },
   {
     title: 'She++',
-    url: 'https://www.sheplusplus.com/',
+    url: 'https://www.sheplusplus.org/',
     description: 'She++ is a nonprofit organization that works to empower underrepresented groups in technology by dismantling negative stereotypes surrounding technical careers.',
   },
 ];
@@ -37,7 +37,7 @@ const resources = [
 const Skills = () => {
   return (
     <div className="Skills">
-      <h2 className="skills-title">Empowering Women in STEM</h2>
+      <h1 className="skills-title">Empowering Women in STEM</h1>
       <p className="skills-description">
         At EmpowHER, our mission is to support women in Science, Technology, Engineering, and Mathematics (STEM) fields by providing valuable resources and opportunities. We believe that empowering women in STEM is essential for fostering innovation, driving economic growth, and achieving gender equality in the workforce.
       </p>
