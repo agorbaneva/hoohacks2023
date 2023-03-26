@@ -31,13 +31,13 @@ class Header extends Component {
             </li>
             <li>
               <a className="smoothscroll" href="#skills">
-                Skills
+                Resources
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#jobs">
-                Jobs
+                Careers
               </a>
             </li>
 
@@ -61,7 +61,7 @@ class Header extends Component {
             <Fade bottom duration={2000}>
               <ul className="social">
                 <a href="#testimonials" className="button btn project-btn">
-                  <i className="fa fa-book"></i>Skills
+                  <i className="fa fa-book"></i>Resources
                 </a>
                 <a href="#jobs" className="button btn github-btn">
                   Careers
