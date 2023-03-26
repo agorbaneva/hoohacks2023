@@ -1,19 +1,24 @@
 import React, { Component } from "react";
-import Zmage from "react-zmage";
-import Fade from "react-reveal";
+import Slide from "react-reveal";
 
 class Careers extends Component {
+
   render() {
 
     return (
-      <section id="portfolio">
-        <Fade left duration={1000} distance="40px">
-          <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
+      <section id="careers">
+
+        <Slide left duration={1300}>
+          <div className="row work">
+            <div className="three columns header-col">
+              <h1>
+                <span>Work</span>
+              </h1>
             </div>
+
+            <div className="nine columns main-col">Work</div>
           </div>
-        </Fade>
+        </Slide>
       </section>
     );
   }

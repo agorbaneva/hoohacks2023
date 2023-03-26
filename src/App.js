@@ -4,8 +4,8 @@ import $ from "jquery";
 import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import Skills from "./Components/About";
-import Careers from "./Components/Skills";
+import Skills from "./Components/Skills";
+import Careers from "./Components/Careers";
 import Contact from "./Components/Contact";
 import Portfolio from "./Components/Careers";
 
