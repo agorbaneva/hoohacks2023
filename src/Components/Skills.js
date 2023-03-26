@@ -20,7 +20,7 @@ class Skills extends Component {
 
     return (
       
-      <section id="testimonials">
+      <section id="skills">
         <div className="text-container">
           <div className="row">
             <div className="two columns header-col">
