@@ -7,7 +7,7 @@ import Footer from "./Components/Footer";
 import Skills from "./Components/Skills";
 import Careers from "./Components/Careers";
 import Contact from "./Components/Contact";
-import Portfolio from "./Components/Careers";
+import Testimonials from "./Components/Testimonials";
 
 class App extends Component {
   constructor(props) {
@@ -44,6 +44,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Testimonials data={this.state.stemQuotes}/>
         <Skills />
         <Careers />
         <Contact />

@@ -50,7 +50,7 @@ const Careers = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div id="jobs" className="careers">
       <h1 className="jobsSectionTitle">Job Listings</h1>
       <div className="job-listings">
         {jobData.map((job) => (

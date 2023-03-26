@@ -1,19 +1,25 @@
 import React, { Component } from "react";
+import quotesData from '../testimonials.js';
 
 class Testimonials extends Component {
   render() {
-    if (!this.props.data) return null;
 
-    const testimonials = this.props.data.testimonials.map(function(testimonials) {
+    const testimonials = quotesData.map(function(testimonials) {
       return (
-        <li key={testimonials.user}>
+        <li >
           <blockquote>
-            <p>{testimonials.text}</p>
-            <cite>{testimonials.user}</cite>
+            <p>{testimonials.quote}</p>
+            <cite>{testimonials.author}</cite>
           </blockquote>
         </li>
       );
     });
+
+    const randomQuoteIndex1 = Math.floor(Math.random() * quotesData.length);
+    const randomQuoteIndex2 = Math.floor(Math.random() * quotesData.length);
+
+    const quote1 = quotesData[randomQuoteIndex1];
+    const quote2 = quotesData[randomQuoteIndex2];
 
     return (
       <section id="testimonials">
@@ -26,7 +32,21 @@ class Testimonials extends Component {
             </div>
 
             <div className="ten columns flex-container">
-              <ul className="slides">{testimonials}</ul>
+              <ul className="slides">
+                <li>
+                    <blockquote>
+                      <p>{quote1.quote}</p>
+                      <cite>{quote1.author}</cite>
+                    </blockquote>
+                  </li>
+                  <li>
+                    <blockquote>
+                      <p>{quote2.quote}</p>
+                      <cite>{quote2.author}</cite>
+                    </blockquote>
+                  </li>  
+                  
+              </ul>
             </div>
           </div>
         </div>
